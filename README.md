@@ -13,6 +13,6 @@ React, Tailwind CSS, Next.js, Firebase
 
 ### Running dev
 
-`cd my-first-react-app
-npm install
-npm run dev`
+`cd my-first-react-app`
+`npm install`
+`npm run dev`
