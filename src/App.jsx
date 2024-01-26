@@ -1,4 +1,5 @@
 import logo from "./assets/check.svg";
+import Goal from  "./Goal.jsx";
 import "./App.css";
 
 function App() {
@@ -8,39 +9,9 @@ function App() {
           <img src={logo} alt="logo" />
           <h1>Checklist app</h1>
         </div>
-        <div>
-          <span>go to bed before 11 </span>
-          <span>+ </span>
-          <span>- </span>
-          <span>- </span>
-          <span>- </span>
-          <span>- </span>
-          <span>- </span>
-          <span>- </span>
-          <span>1/7</span>
-        </div>
-        <div>
-          <span>morning routine </span>
-          <span>+ </span>
-          <span>+ </span>
-          <span>- </span>
-          <span>- </span>
-          <span>- </span>
-          <span>- </span>
-          <span>- </span>
-          <span>2/7</span>
-        </div>
-        <div>
-          <span>daily review </span>
-          <span>- </span>
-          <span>+ </span>
-          <span>+ </span>
-          <span>- </span>
-          <span>- </span>
-          <span>- </span>
-          <span>- </span>
-          <span>2/7</span>
-        </div>
+        <Goal name="go to bed before 11pm"></Goal>
+        <Goal name="morning routine"></Goal>
+        <Goal name="daily review"></Goal>
       </main>
   );
 }
