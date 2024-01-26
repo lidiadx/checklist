@@ -1,7 +1,9 @@
 .goal_container {
   padding: 0.2em 1em;
+  display: flex;
 }
 
 .goal_container span{
+  display: inline-block;
   padding: 0 0.2em;
 }

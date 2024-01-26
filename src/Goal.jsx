@@ -1,21 +1,17 @@
-/* eslint-disable react/prop-types */ 
+/* eslint-disable react/prop-types */
 //TODO: prop-types validation
 
+import { days, renderStatus} from "./properties.js";
 import "./Goal.css";
 
-function Goal(props) {
+function Goal({ name, checks }) {
   return (
-    <div className="goal_container">
-      <span className="goal_name">{props.name}</span>
-      <span>+</span>
-      <span>-</span>
-      <span>-</span>
-      <span>-</span>
-      <span>-</span>
-      <span>-</span>
-      <span>-</span>
-      <span>1/7</span>
-    </div>
+    <li>
+      <div className="goal_container">
+        <span className="goal_name">{name}:</span>
+        {checks.map((check, index) => (<span key={index} className={days[index]}>{renderStatus(check)}</span>))}
+      </div>
+    </li>
   );
 }
 
